@@ -1,0 +1,28 @@
+{
+  "name": "r3f-instanced-spatial-grid",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "High-performance React Three Fiber v9 + Three.js InstancedMesh spatial field rendering 5,000+ pointer-reactive 3D instances in 1 draw call.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.0.0",
+    "@react-three/fiber": "^9.0.0",
+    "lucide-react": "^0.460.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.181.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.181.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0"
+  }
+}

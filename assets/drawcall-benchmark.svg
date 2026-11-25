@@ -1,0 +1,23 @@
+<svg width="1000" height="340" viewBox="0 0 1000 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="340" rx="16" fill="#0B1120" stroke="#1E293B"/>
+  <text x="48" y="52" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">
+    GPU Draw Call Scaling: Individual &lt;mesh&gt; Nodes vs. InstancedMesh
+  </text>
+  <text x="48" y="78" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="14">
+    Rendering 5,000 separate React meshes saturates CPU draw calls; InstancedMesh batches them into 1.
+  </text>
+
+  <text x="48" y="136" fill="#CBD5E1" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600">
+    5,000 Separate &lt;mesh&gt; Components
+  </text>
+  <rect x="48" y="152" width="660" height="40" rx="8" fill="#EF4444" fill-opacity="0.75"/>
+  <text x="378" y="177" text-anchor="middle" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700">5,000 Draw Calls + React Reconciliation Overhead</text>
+  <text x="728" y="177" fill="#F87171" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700">Severe Frame Drops</text>
+
+  <text x="48" y="232" fill="#34D399" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600">
+    THREE.InstancedMesh + Pre-Allocated Scratch Objects
+  </text>
+  <rect x="48" y="248" width="140" height="40" rx="8" fill="#059669"/>
+  <text x="118" y="273" text-anchor="middle" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700">1 Draw Call</text>
+  <text x="210" y="273" fill="#34D399" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700">60fps with 0 GC Pressure</text>
+</svg>
